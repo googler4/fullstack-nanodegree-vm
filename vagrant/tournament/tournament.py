@@ -365,6 +365,7 @@ def swissPairings():
                 print "match found"
 
                 while ii > i + 1:
+                    #swap until paired
                     reportPP[ii-1], reportPP[ii] = reportPP[ii], reportPP[ii-1]
                     ii -= 1
                 #break loop
