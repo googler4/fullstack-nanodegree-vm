@@ -27,11 +27,3 @@ CREATE TABLE tournaments (
                      tourn_live BOOLEAN,
                      time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                      id SERIAL );
-
-DROP TABLE IF EXISTS leaderboards;
-CREATE TABLE leaderboards ( player_name TEXT,
-                     tourn_id integer,
-                     player_id integer,
-                     score integer,
-                     time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                     id SERIAL );

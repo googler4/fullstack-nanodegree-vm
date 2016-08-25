@@ -19,6 +19,7 @@ def connect():
 #PSYCOGP2 - query and data, also excutemany if needed
 def execute_psqls(query, data):
     conn = None
+
     try:
         # print "commit"
         conn = connect()
@@ -88,14 +89,20 @@ def execute_psql(query):
             conn.close()
 
 #PSYCOGP2 - query, with single variable return
-def execute_psql_return(query):
+def execute_psql_return(query, *data):
     conn = None
     output = None
+
+    if not data:
+        data = ''
+    else:
+        data = data[0]        
+
 
     try:
         conn = connect()
         cursor = conn.cursor()
-        cursor.execute(query)
+        cursor.execute(query, data)
         
         output = cursor.fetchall()
         print output
@@ -116,17 +123,20 @@ def execute_psql_return(query):
             conn.close()
         #return output
         #print "uploaded"
+
+#Start Tournament, create DB entry
 def startTournament():
     #build query
     query = "INSERT INTO tournaments(time) VALUES (now()) RETURNING id"
 
-    #execute query
+    #execute query, return Tournament ID (#)
     _Current_Tournament = execute_psql_return(query)
 
+#Change or update tournament
 def selectTournament(selected_Tourn):
-
-    query = "SELECT COALESCE ((SELECT COUNT(*) as c FROM tournament WHERE id = "+selected_Tourn+"), 0)"
-    validTourn = execute_psql_return(query)
+    data = ([selected_Tourn])
+    query = "SELECT COALESCE ((SELECT COUNT(*) as c FROM tournament WHERE id = %s), 0)"
+    validTourn = execute_psqls_return(query, data)
 
     if(validTourn == 1):
         _Current_Tournament = selected_Tourn
@@ -154,6 +164,7 @@ def countPlayers():
     """Returns the number of players currently registered."""
     
     query = "SELECT COALESCE ((SELECT COUNT(*) as c FROM players), 0)"
+    
     return execute_psql_return(query)
 
 
@@ -228,12 +239,13 @@ def reportTieMatch(player1, player2):
       winner:  the id number of the player who won
       loser:  the id number of the player who lost
     """
-    query = "SELECT name FROM players WHERE id = "+str(player1)
-    player1_name = execute_psql_return(query)
+    data = ([player1])
+    query = "SELECT name FROM players WHERE id = %s"
+    player1_name = execute_psql_return(query, data)
      
-
-    query = "SELECT name FROM players WHERE id = "+str(player2)
-    player2_name =  execute_psql_return(query)
+    data = ([player2])
+    query = "SELECT name FROM players WHERE id = %s"
+    player2_name =  execute_psql_return(query, player2)
 
     title = player1_name+" tied "+player2_name
 
@@ -253,12 +265,13 @@ def reportMatch(winner, loser):
       winner:  the id number of the player who won
       loser:  the id number of the player who lost
     """
-    query = "SELECT name FROM players WHERE id = "+str(winner)
-    winner_name = execute_psql_return(query)
+    data = ([winner])
+    query = "SELECT name FROM players WHERE id = %s"
+    winner_name = execute_psql_return(query, data)
      
-
-    query = "SELECT name FROM players WHERE id = "+str(loser)
-    loser_name =  execute_psql_return(query)
+    data = ([loser])
+    query = "SELECT name FROM players WHERE id = %s"
+    loser_name =  execute_psql_return(query, data)
 
     title = winner_name+" vs "+loser_name
 
@@ -288,7 +301,11 @@ def replay(player1, player2):
 
 
 def reportPrePairings():
+    """Returns a list of pairs of players for the next round of a match.
 
+        Query winners and loser count, then list by wins. This is faster as a 
+        SQL query. Then Pair for pre-pairing.
+    """
     conn = None
     try:
         # print "commit"
@@ -376,15 +393,3 @@ def swissPairings():
 
     print nextRound
     return nextRound
-
-
-
-
-
-# registerPlayer("Erik")
-# registerPlayer("ErikD")
-# registerPlayer("ErikDD")
-# registerPlayer("ErikDDD")
-# reportMatch(1, 2)
-#
-# playerStandings()
