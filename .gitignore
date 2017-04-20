@@ -15,4 +15,4 @@ develop-eggs
 venv
 *.pyc
 build
-/.vagrant
+.vagrant/
