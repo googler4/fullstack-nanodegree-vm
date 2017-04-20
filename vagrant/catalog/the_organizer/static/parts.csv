@@ -1,0 +1,160 @@
+SH-PWS3,Voltage,El1,6Y6AL2Z7,1546966876940
+laptop heatsink,heatsink,el1,VEAD2AJ4,9792490456470
+gy-31 rgb,sensor,el1,VMH6O4J2,6876674168369
+robot gripper,electro/mec,el1,UQ6AORFN,1360815045878
+mini heatsink,heatsink,el-s1,MNK6S5B3,9925346968432
+everflow fan,heatsink,el1,U56ZK7VT,1460416383937
+sm 7 segment,led,el-s1,ASW6SQA7,1230888063709
+sm chr screen,display,el-s1,3AL3A3HZ,4223296172908
+lg STDP,switch,el-s1,ZK5BHDA6,8137220976844
+md STDP mnt,switch,el-s1,RCWMRY5D,1128619285982
+md 7 segment,led,el-s1,SAJ7YMVQ,1169387564083
+key DPDT,switch,el-s1,2BXKOEWM,9685747035353
+esp8266mod,microcontroller,el-s1,OZUYMOKC,1036560217359
+pwr resistor,resistor,6,EAQGARSX,9333479917833
+red push btn,switch,el-s1,C4ZTFYCV,6810583103333
+100w led,led,el-s1,5MQKXQWQ,1226287332442
+choke,electro/passive,el-s1,5TANVICM,3173814647299
+adj choke,electro/passive,el-s1,BV3YPXUY,1316923396973
+lg DTDP rocker,s,el-s1,6HERJDDA,2457484990302
+100w rgb led,led,el-s1,IPJ2NK4F,1414846267285
+pir motion,sensor,el-s1,I7HCR34C,8608364856249
+nfc card,rfid/nfc,el-s1,U4753KVV,7483180674713
+yumo rotary encoder,sensor,el-s1,BYDNO3TC,3390973325683
+sk6812 x10,led,el-s1,LQO6PYSR,4983466703922
+lipo bms 3s p/c,power ic,el-s1,ON7JPLJX,1200649132757
+lipo bms 3s,power ic,el-s1,U2KZZGUO,8279714665991
+100w dcdc boost,power ic,el-s1,H4LWSHKI,1176966637541
+md dcdc boost xl6009e1,power ic,el-s1,QCB7T5QD,1336527540007
+pico mic,sensor,el-s1,L6M5KOMW,1206197861652
+voltmeter dcdc boost,power ic,el-s1,EJJUE42F,3359615766356
+lux sensor tsl2561,sensor,el-s2,33YIDS2M,2562535108470
+100ft tabbing wire,wire,husky-tbx,QI2TSAZX,1440277266203
+resistor kit,resistor,husky-tbx,BTSDJKDF,3067982588280
+nfc reader,rfid/nfc,el1,I2CAU6WB,7492397806438
+10pc PCB drill .3-1.2mm,cnc,cnc-tbx,UX3E34FX,8760386861902
+10pc 1/8 ball endmill,cnc,cnc-tbx,JBNYKXPZ,9812726023701
+10pc 1/8 flat endmill,cnc,cnc-tbx,XMLRH3JK,6369067585666
+10pc 1mm flat endmill,cnc,cnc-tbx,YQDROU3V,5752372548937
+10pc 20deg .3mm v carve,cnc,cnc-tbx,GUTW6YRS,7496959765121
+10pc 0.6-1.5mm flat endmill,cnc,cnc-tbx,PQEI2VLU,1279970195155
+nrf24,wireless,el-s1,33BXFXR3,9660979290784
+8 neopixel strip,led,el-s1,II6UECHS,5925689738458
+10w AC fan/blower,heatsink,el1,BGLG67FS,4419756946011
+NX DSP nx3224t024,display,e,4Z3VE56P,4551141508539
+4in zip ties,tools,husky-tbx,2B4YTV67,1406776969476
+8ohm 5w speaker,sound,el1,7SWXMC4V,1203100333545
+pololu cld-loop motor driver jrk21 v3,motor-driver,el-s2,QZST7L7C,7755662944318
+hpwr brushless 150a esc,motor-driver,1,UTKJRXPN,8546295323127
+50pcs m4 screw set,hardware,husky-tbx,XDFTZJUR,1278790052611
+ErikDs DMA Robot Board,robot,el1,HY3347TY,1449038142897
+4w blower,heatsink,el1,PMXTM6Q6,1132070675150
+single sided pcb,hardware,cnc-tbx,CAI2MIOR,8959804610615
+.75x1.5 plastic bushing,hardware,,H24F2TS4,1029317669236
+RGB Breakout ws2812,led,el-s1,OK6BPU6I,3048457088941
+4 chl relay module,power ic,el-s2,TE67QQ2K,1256854145163
+2 chl relay module,power ic,el-s2,ZSW27Q7T,4514302411962
+HomeDepot machine screw kit,hardware,husky-tbx,46C7BMI2,1294666066015
+hpwr robot china,motor-driver,el-s2,53TBYZE2,8039649385778
+2 ch screw terminal,hardware,el-s2,ZRAKBGUI,9318632770776
+touch cap cap118,sensor,el-s1,C3ORWODU,9186140783869
+hp motor driver lg heatsink,motor-driver,el1,ZFEYLS67,8432429198932
+China Robot Chassis,robot,mk_el2,DNF4LRAM,4426346422575
+China Robot wheel,robot,mk_el2,S44LPSXQ,1286818653002
+China Encoded Robot SET,robot,mk_el2,RK3LYGET,1019933672525
+digital ac dimmer inmojo,power ic,el-s2,Q6JOA3V6,1161880233481
+12v solenoid 121k13730,electro/mec,el-s2,R6JEZ7A7,1150490108188
+Lav lv1 microphone,sound,,EHLP7MPX,3453672892191
+easymold silicone putty,epoxy/resin,husky-tbx,DLLYBDG5,6673573584173
+5w dcdc stepdown LM2595,power ic,el-s1,F3RZOXCQ,5186607396199
+12v 3a laptop power,power supply,mk_el2,7DO75DPL,1059378284733
+3m black screw set,hardware,husky-tbx,2XMDY52V,3310982958405
+sm china robot driver,motor-driver,mk_el2,PQ6XFKY4,1188678179699
+arduino nano ch340g,microcontroller,el-s1,G3K5IITB,1335266847055
+digispark 16.5mhz,microcontroller,el-s1,XWBMAVQV,1327656634328
+tiny rtc 12c module,ic,el-s1,M7MRC52S,3782100382265
+bluetooth serial link,wireless,el-s1,QD65GPU4,6072838312973
+lever arm contact switch,switch,el-s1,EGI5WOST,1334439777495
+small gears,hardware,mk_el2,UYQZGMIO,1380672538287
+bluetooth module pcb antenna wrl-11601,wireless,el-s2,YEQUW62T,1500925110342
+infrared distance sensor bsc,sensor,el-s2,3NM5RYGV,1200520219216
+USB to ISP,ic,el-s2,HG2KLKCA,2521749505861
+Thermally Conductive expoy 832tc,epoxy/resin,,INTTIL4X,1318417373864
+logic level converter SF,ic,el-s2,QJVW3LYP,1009182093305
+mini lipo charger,power ic,el-s2,FIHTJC7D,9414464945218
+md DTDP rocker,sw,el-s1,T3G6VPPW,1106825231316
+md thick heatsink,heatsink,el-s1,KUF5OQOQ,1162273906821
+Arduino uno clone ch340g,mi,el-s1,VKPSH23M,1988656491037
+8in black zip ties,hardware,husky-tbx,467VG7QP,6751555951599
+200pc spring set comp/exten,hardware,husky-tbx,HF3TAKF4,1391980028614
+xbox 360 connect,sensor,mk_el2,PPMEJUFQ,3677818249351
+teensy lc,microcontroller,el-s1,2D2XXXLB,1758914237099
+raspi touchscreen adafruit 3.5in 320x480 tft,display,el-s1,2M36IFSG,9277885812476
+eclectic e6000 glues,epoxy/resin,husky-tbx,JWJBOHXY,1194431676432
+arduino nano ch340g aliexpress,microcontroller,el-s1,ZGMZ7HVL,7817037810333
+digital loggers ac controlled sw,switch,el-s2,LZMZ4ME6,5840162191397
+1in router flat bit,cnc,husky-tbx,7T33BV6N,1355641240304
+push button,switch,el-s1,IORO2RFG,1330179043750
+raspi ribbon cable,wire,el-s2,YLLVZL2J,4508673793486
+rnd belt grooved pulley ,mechanical,hard-m1,MXGBCNCR,1302330274026
+round belt,mec,hard-m1,NDBK6NSG,9156663394614
+quadcopter propellers,hardware,,C4RVXALF,1551522456815
+hole pre punch,hardware,husky-tbx,DYCDCI7Q,1317485125522
+china rotary encoder,sensor,hard-m1,QDSW65CR,1037617432588
+Infared Distance sensor 4-30cm ,sensor,el-s2,IAP2IRVO,1425244607366
+roller bearing 608zz,mechanical,hard-m1,WOTT5API,6327846144804
+node32 creations,junk,,H2F6GLEB,2221101058480
+nrf24l01+sma antenna v1,wireless,el-s2,ZSOIJWSP,1344640389644
+air pressure regulator,air,hard-m1,L5XTDBIJ,2482582970215
+sm breadboard,hardware,el-s2,OQPKAIVW,5659692437048
+large gluesticks,misc,hard-m1,KFGH2JUN,8225487577357
+hc mini quadcopter,drones,hard-m1,T4ALLPFQ,2327887680080
+icsp USBtinyISP v2,ic,el-s2,UJH3XQSA,8817814789281
+f2f single strand jumpers,wire,el-s2,LXITZO6Z,4379384817432
+lipofe bms 8s 15a,power ic,el-s2,QU3U2XZV,8636865285841
+molex connector set,connector,hard-m1,WR722OEY,2420595362656
+kodiak 1/8 flat endmill,cnc,cnc-tbx,GWWHRYCD,1616715308581
+one wire temp sensor to22,sensor,el-s2,AP63IZQC,1320898099259
+parallax 5 pos switch,switch,el-s2,5B4MU3IP,7768690384475
+electronic and thermal tapes,hardware,el-s2,SL2UI7OL,5998971959407
+frys heatshrink,hardware,husky-tbx,D5WPAINO,4543920826820
+steel blue layout fluid,hardware,husky-tbx,RXDTARSC,1061011102407
+lg contact switch,switch,el-s2,X55PDSSZ,4276165748371
+flow sensor,sensor,el-s2,PK3DYBBC,7259396405173
+lathe tool,hardware,hard-m1,MHCKLFZR,1425392217522
+spindle controller,motor-driver,hard-m1,OE6ST23V,1442605171595
+circular connector,connector,hard-m1,CZ4HPYB7,4636515032532
+cap array,power ic,el-s2,MQTPSWYL,1014800091484
+ultra fire 18650 china,battery,el-s2,YMHUS5AJ,7903913412338
+CHARGE DR current sensor,sensor,el-s2,B5PQTGN3,6246648114106
+carbide lathe tool,cnc,hard-m1,LY64PXRL,7833779575052
+tjctm2402 spi display,display,el-s2,LBBHX62A,1426376731382
+solder wick 2.5mm,hardware,,VORH4SRX,3489046115012
+0.5in chamfer endmill,cnc,,ZW5MQWLA,1274417509963
+fan filters,misc,hard-m1,BNBPC3CR,1049171106870
+brushless something,misc,hard-m1,JWBIEMUG,6534863977102
+5.8ghz proximity radar sensor,sensor,el-s2,LQUSB2XF,7794976331647
+Arduino FIO SF,microcontroller,el-s1,6KU36IRR,1358428246172
+female headers,hardware,el-s1,RM3OTTXA,8354855490163
+male headers,hardware,el-s1,WEACE6KE,1104222840286
+ATMEGA 328P DIP,microcontroller,el-s1,N5P2WF6O,7569437587947
+AC Current sensor,sensor,el-s2,TGHBPS4D,9997707873746
+DIY Mall microsd wav player,sound,el-s2,Q6BIGCZ3,9508190613264
+ultrasonic distance sensor,sensor,el-s2,Z3HOLLVL,1317342150248
+bluetooth bee,wireless,el-s2,WI2QPST3,1203764889460
+avr pocket programmer,ic,el-s2,FRUV7LFH,5358891583491
+etcher,hardware,,RXEHWJ7Q,6100268441561
+thing control boards,microcontroller,,OTJQVMRP,5972334735174
+md breadboard,hardware,,BVLNQ2ZQ,9545188921255
+nodemcu v1,microcontroller,el-s2,GHW6YDDM,8605867462964
+1/4in single flute flat endmill,cnc,,3C6G2ZTG,2456400721261
+raspi 3.5in touchscreen 480x320,display,el-s3,EJ3N6WEC,2780283128281
+0.675in rotor clip retaining rings,hardware,hard-m1,XFLYCGVM,1284883100639
+v roller inventables,mechanical,hard-m1,JHHEC3OY,4011399680795
+standard wire connectors,connector,hard-s1,L6M5S2SD,1425152244469
+m6 square nuts,hardware,hard-s1,KSWUUYPW,5520131824993
+Arctic silver thermal adhevise,epoxy/resin,hard-s1,2HZFPXMV,6684723705240
+Server Heatsink,heatsink,hard-s1,Q4Q7SRFV,4027328099407
+0.25in double sided 2 flute flat endmill,cnc,,PBE53YLQ,3275742681874
+0.125in ball endmill 0.5in shake,cnc,,22KW3DND,7743103183493
+cap tant 10uf 1411,smd,el-s3,DPUPK6IN,2663142987532

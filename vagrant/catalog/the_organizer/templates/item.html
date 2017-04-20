@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="breadcrumbs">
+<li><a href="/">Home</a></li>
+<li><a class="disabled">Items</a></li>
+</ul>
+<div class="row small-up-2 medium-up-3 large-up-4">
+
+{% for item in items %}
+<div class="column">
+<img class="thumbnail" src="{{item.thumbnail}}">
+<a href="./{{item.id}}">{{item.title}}</a>
+<h6>{{item.headline}}</h6>
+<br>
+</div>
+ {% endfor %}
+
+</div>
+{% endblock %}

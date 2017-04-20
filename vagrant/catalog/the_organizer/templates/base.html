@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The_Orgainzer</title>
+    <link rel="stylesheet" href="/static/css/foundation.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <!-- <h1>Welcome to Foundation</h1> -->
+      </div>
+    </div>
+    <div class="callout primary" style="margin: 0;">
+<div class="row">
+<div class="column small-8">
+<h1>Catalog Project</h1>
+<p class="lead">Making it easier to find random shit, circa 2017</p>
+</div>
+<div class="column small-4 text-right">
+  
+  
+  {% if current_user.is_authenticated %}
+  <div class="row">
+  <div class="column small-8">
+  {{ current_user.name }}<br>
+  <a href="/logout">Logout</a>
+  </div>
+  <div class="column small-4">
+  <div class="thumbnail"><img src="{{current_user.image_url}}">
+  </div>
+  </div>
+  </div>
+  {% else %}
+  <a href="/login"> Login</a>
+  {% endif %}
+
+</div>
+</div>
+</div>
+<div class="top-bar" style="border-bottom: 1px solid rgba(10, 10, 10, 0.25); margin-bottom: 1rem;">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">The Organizer</li>
+      <li>
+        <a href="/items">Items</a>
+      </li>
+      <li><a href="/groups">Groups</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li>
+        <button class="button" type="button" data-toggle="example-dropdown-1">Search</button>
+<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+  Yeah... <strong>No.</strong> <br>Search is let's just say optional.
+</div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+      </div>
+    </div>
+    <script src="/static/js/vendor/jquery.js"></script>
+    <script src="/static/js/vendor/what-input.js"></script>
+    <script src="/static/js/vendor/foundation.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

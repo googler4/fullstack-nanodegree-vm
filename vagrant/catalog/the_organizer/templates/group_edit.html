@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row columns">
+<nav aria-label="You are here:" role="navigation">
+<ul class="breadcrumbs">
+<li><a href="/">Home</a></li>
+<li><a href="/items">Items</a></li>
+{% for groupmap in item.group_maps %}
+<li class=""><a href="/group/{{groupmap.group_id}}">{{groupmap.attribute}}</a></li>
+{% endfor %}
+<li>
+<span class="show-for-sr">Current: </span> {{item.title}}
+</li>
+</ul>
+</nav>
+</div>
+<div class="row small-up-2 medium-up-3 large-up-4">
+<div class="row">
+<div class="medium-6 columns">
+<img class="thumbnail" src="{{item.thumbnail}}">
+<div class="row">
+<div class="column">
+<input type="text" id="middle-label" value="{{item.thumbnail}}">
+</div>
+{% for image in item.images %}
+<div class="column">
+<input type="text" id="middle-label" value="{{image.url}}">
+</div>
+{% endfor %}
+</div>
+</div>
+<div class="medium-6 large-5 columns">
+<h3>Title</h3><input type="text" id="middle-label" value="{{item.headline}}">
+<h3>Description</h3><textarea rows=10 type="text" id="middle-label" value="">{{item.description}}</textarea>
+
+<!-- <label>Size
+<select>
+<option value="husker">Small</option>
+<option value="starbuck">Medium</option>
+<option value="hotdog">Large</option>
+<option value="apollo">Yeti</option>
+</select> -->
+</label>
+<div class="row">
+<div class="small-3 columns">
+<label for="middle-label" class="middle">Quantity</label>
+</div>
+<div class="small-9 columns">
+<input type="text" id="middle-label" placeholder="One fish two fish">
+</div>
+</div>
+<a href="#" class="button large expanded">Save</a>
+<div class="small secondary expanded button-group">
+<a href="edit" class="button">Edit</a>
+<a href="edit" class="button">Delete</a>
+<a href="duplicate" class="button">Duplicate</a>
+</div>
+<div class="row">
+{% for attr in item.attributes %}
+<div class="column">
+
+<div class="text-right"><a href="./attr/{{attr.id}}/edit">Edit</a>  <a href="item/{{item.id}}/attr/{{attr.id}}">Remove</a></div>
+<h5>{{attr.attribute}} - {{attr.value}}</h5>
+</div>
+ {% endfor %}
+ </div>
+
+</div>
+</div>
+
+</div>
+{% endblock %}

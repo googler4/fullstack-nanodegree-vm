@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row columns">
+<nav aria-label="You are here:" role="navigation">
+<ul class="breadcrumbs">
+<li><a href="/">Home</a></li>
+<li><a href="/groups">Groups</a></li>
+<li class=""><a href="/groups/{{group.group_maps[0].group_id}}">{{group.group_maps[0].attribute}}</a></li>
+<li>
+<span class="show-for-sr">Current: </span> {{group.title}}
+</li>
+</ul>
+</nav>
+</div>
+<div class="row small-up-2 medium-up-3 large-up-4">
+<div class="row">
+<div class="medium-6 columns">
+<img class="thumbnail" src="{{group.thumbnail}}">
+<div class="row">
+
+<div class="column">
+<h3>Matching Items</h3>
+</div>
+
+{% for item in items %}
+<div class="column">
+<div class="text-right"><a href="/items/{{item.id}}">View</a>  <a href="/items/{{item.id}}/edit">Edit</a></div>
+<h5>{{item.title}}</h5>
+
+</div>
+{% endfor %}
+</div>
+</div>
+<div class="medium-6 large-5 columns">
+<h3>Group Title: "{{group.attribute}}"</h3>
+<p>Number of matching items: {{group.value}}</p>
+<!-- <label>Size
+<select>
+<option value="husker">Small</option>
+<option value="starbuck">Medium</option>
+<option value="hotdog">Large</option>
+<option value="apollo">Yeti</option>
+</select> -->
+</label>
+<div class="row">
+<!-- <div class="small-3 columns">
+<label for="middle-label" class="middle">Quantity</label>
+</div>
+<div class="small-9 columns">
+<input type="text" id="middle-label" placeholder="One fish two fish">
+</div> -->
+</div>
+<!-- <div class="small secondary expanded button-group">
+<a href="edit" class="button">Edit</a>
+<a href="edit" class="button">Delete</a>
+<a href="duplicate" class="button">Duplicate</a>
+</div> -->
+<div class="row">
+{% for attr in group.children %}
+<div class="column">
+
+<div class="text-right"><a href="/groups/{{attr.id}}">Edit</a>  <a href="groups/{{group.id}}">Remove</a></div>
+<h5>{{attr.attribute}}</h5>
+</div>
+ {% endfor %}
+ </div>
+
+</div>
+</div>
+
+</div>
+{% endblock %}
