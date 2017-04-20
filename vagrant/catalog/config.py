@@ -13,7 +13,7 @@ class Config(object):
     PREFERRED_URL_SCHEME = ('http')
 
 
-    CLIENT_ID = "REDACTED"
+    CLIENT_ID = "REDACT"
     
 
 class ProductionConfig(Config):
