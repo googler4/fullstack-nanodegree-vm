@@ -17,3 +17,9 @@ For the moment we are leveleraging SQL LITE, so no DB setup.
 Finally my client_id is redacted from the config (config.py). Insert any valid google client config to get /login function.
 
 
+
+Naming is slightly different here, groups instead of categories.
+
+I guess I really didn't get to take the time to explain all of the awesome work that went into this project. For the the json endpoint, we actually have a full complaint json-api endpoint. That's accessible by /api/<model>. `/api/items` - `/api/groups` - `/api/itemimages`. So that's cool (also for ember, and it's beautiful)
+
+Permissions are slightly different compared to example app, editing or deleting content does require a log. But browsing is permissible. 

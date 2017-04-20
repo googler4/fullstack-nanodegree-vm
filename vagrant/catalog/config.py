@@ -13,7 +13,7 @@ class Config(object):
     PREFERRED_URL_SCHEME = ('http')
 
 
-    CLIENT_ID = "131081179406-cu9jst77mafih6l3i4n0mi3dbrfjuag6.apps.googleusercontent.com"
+    CLIENT_ID = "REDACTED"
     
 
 class ProductionConfig(Config):
