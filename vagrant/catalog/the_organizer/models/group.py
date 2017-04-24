@@ -19,6 +19,7 @@ class Group(AnATTR, db.Model):
     parent_id = db.Column(UUIDType, ForeignKey('groups.id'))
     children = db.relationship("Group")
     group_maps = db.relationship("GroupMap")
+    last_updater = db.Column(Unicode(256), nullable=True)
 
     # submitted_date_time = db.Column(DateTime(timezone=True), nullable=False)
     # updated_date_time = db.Column(DateTime(timezone=True), nullable=False)
