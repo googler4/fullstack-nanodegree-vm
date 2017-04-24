@@ -65,10 +65,14 @@ def items_edit_post(id):
 
     data = request.form
 
-    item_exist.title = data['title']
-    item_exist.headline = data['headline']
-    item_exist.description = data['description']
-    item_exist.url = data['url']
+    if data['title']:
+        item_exist.title = data['title']
+    if data['headline']:
+        item_exist.headline = data['headline']
+    if data['description']:
+        item_exist.description = data['description']
+    if data['url']:
+        item_exist.url = data['url']
     # I know this isn't the best option, I know importing current user is a
     # better method.
     item_exist.last_updater = data['user']
